@@ -22,12 +22,14 @@ EXTRACT_TAG = re.compile(r'(?:\s*)(\S+)(?:\s*)')
 LT_CONFIG = { 'CODE_DIR': 'code',
               'NOTEBOOK_DIR': 'notebooks',
               'FLICKR_API_KEY': 'flickr',
-              'GIPHY_API_KEY': 'giphy'
+              'GIPHY_API_KEY': 'giphy',
+	      'PLUGIN_PATHS': [],
 }
 LT_HELP = { 'CODE_DIR' : 'Code directory for include_code subplugin',
             'NOTEBOOK_DIR' : 'Notebook directory for notebook subplugin',
             'FLICKR_API_KEY': 'Flickr key for accessing the API',
-            'GIPHY_API_KEY': 'Giphy key for accessing the API'
+            'GIPHY_API_KEY': 'Giphy key for accessing the API',
+	    'PLUGIN_PATHS': 'Pelican plugin paths'
 }
 
 class _LiquidTagsPreprocessor(markdown.preprocessors.Preprocessor):
